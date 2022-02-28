@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+
+
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"  fx:controller="controller.PantryController" spacing="10" prefWidth="600" prefHeight="550" alignment="CENTER"   >
+
+    
+    <Text text="Pantry" styleClass="subtitle"  />
+    
+    <Text text="Add an Ingredient" styleClass="label" />
+    <HBox alignment="CENTER"  >
+        <TextField fx:id="ingredientTf" promptText="e.g. Garlic" styleClass="textfield" /> 
+        <Button text="Add" styleClass="mainbutton" style="-fx-pref-width: 100px;" onAction="#handleAdd" />
+        <Button text="Delete" fx:id="deleteButton" styleClass="mainbutton" style="-fx-pref-width: 100px;" onAction="#handleDelete" disable="true" />
+
+    </HBox>
+    <HBox alignment="CENTER" >
+        <TextField fx:id="ingredientSearchTf" styleClass="textfield" promptText="Filter by Ingredient" />
+    </HBox>
+     
+    
+    <ListView fx:id="pantryItemLv" prefWidth="300" prefHeight="400"  items="${controller.pantry.items}"> <!--  -->
+        
+        <placeholder>
+                <Label text="No Ingredients"/>
+        </placeholder>    
+    
+    </ListView>  
+    
+    
+
+
+
+    <stylesheets>
+        <URL value="@recipemanagerfx.css" />
+    </stylesheets>
+    
+</VBox>
