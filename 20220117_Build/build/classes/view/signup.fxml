@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" prefWidth="660" spacing="10" styleClass="table-view" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.SignupController">
+   <children>
+   
+       <BorderPane>
+           <top>
+                   <Button onAction="#handleLoginPage" style="-fx-padding: 10 20 0 0;" styleClass="textbutton" text="login instead" BorderPane.alignment="TOP_RIGHT" />
+           </top>
+       </BorderPane>
+       
+      <Text styleClass="subtitle" text="Signup" /> 
+                   
+       <VBox alignment="CENTER" prefHeight="414.0" prefWidth="658.0" spacing="20" style="-fx-padding: 20 0 30 0;">
+                      <children> 
+                      
+                      
+                      <Text styleClass="label" text="Email" />
+                     <TextField fx:id="emailTf" promptText="e.g. abdulqayoom@gmail.com" styleClass="textfield" /> 
+      
+                     <Text styleClass="label" text="Username" />
+                     <TextField fx:id="usernameTf" promptText="e.g. abdulQ" styleClass="textfield" /> 
+      
+                     <Text styleClass="label" text="Password" />
+                     <PasswordField fx:id="passwordPf" promptText="e.g. Aq91$!" styleClass="textfield" />
+                     
+                     <Button onAction="#handleNewUser" styleClass="mainbutton" text="Signup">
+                          <VBox.margin>
+                           <Insets>
+                               <top>20</top>
+                           </Insets>
+                       </VBox.margin>
+                     </Button>
+            <Text fx:id="errorMsg" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="An account with the same email already exists" textAlignment="CENTER" visible="false" wrappingWidth="202.13671875">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+                      </children>
+       </VBox>
+   </children>
+
+                    
+
+    
+    <stylesheets>
+        <URL value="@recipemanagerfx.css" />
+    </stylesheets>
+    
+</VBox>

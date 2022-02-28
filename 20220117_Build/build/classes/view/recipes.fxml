@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"  fx:controller="controller.RecipesController" spacing="10" prefWidth="600" prefHeight="550" alignment="CENTER"   >
+
+    <Text text="Recipes" styleClass="subtitle"  />
+    
+    <HBox alignment="CENTER" >
+        <TextField fx:id="recipeSearchTf" styleClass="textfield" promptText="Search..." />
+    </HBox>
+    
+    <ListView fx:id="recipesLv" prefWidth="300" prefHeight="400" items="${controller.pantry.availableRecipes}" >
+        
+        <placeholder>
+                <Label text="No Recipes Available, Add More Ingredients"/>
+        </placeholder>    
+    
+    </ListView>  
+    
+    <HBox alignment="CENTER" >
+        <Button fx:id="openRecipeBtn" text="Open Recipe" styleClass="mainbutton" disable="true" onAction="#handleRecipe" />
+    </HBox>
+    
+    <stylesheets>
+        <URL value="@recipemanagerfx.css" />
+    </stylesheets>
+    
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" styleClass="table-view" fx:controller="controller.DashboardController" spacing="10" prefWidth="600" prefHeight="400" alignment="CENTER"   >
+
+    <Text text="Dashboard" styleClass="subtitle" />
+
+    <VBox spacing="20" alignment="CENTER" style="-fx-padding: 20 0 40 0;"  > 
+               
+        <Button text="Pantry" styleClass="mainbutton" onAction="#handlePantry"  />
+        <Button text="Recipe Finder" styleClass="mainbutton" onAction="#handleRecipes"  />
+        <Button text="Settings" styleClass="mainbutton" disable="true" />
+        <Button text="Close" styleClass="mainbutton" onAction="#handleExit"  />
+               
+    </VBox>
+    
+    <stylesheets>
+        <URL value="@recipemanagerfx.css" />
+    </stylesheets>
+    
+</VBox>

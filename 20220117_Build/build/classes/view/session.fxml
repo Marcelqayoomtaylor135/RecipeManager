@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" styleClass="table-view" fx:controller="controller.SessionController" spacing="10" prefWidth="600" prefHeight="400"  alignment="CENTER"   >
+
+    
+    <Text text="Virtual Pantry" styleClass="title" />
+    <Button text="Enter the Pantry" onAction="#handleEnter" styleClass="mainbutton" />
+    
+    
+ 
+    
+    <stylesheets>
+        <URL value="@recipemanagerfx.css" />
+    </stylesheets>
+    
+</VBox>
