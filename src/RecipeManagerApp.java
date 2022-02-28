@@ -19,6 +19,8 @@ public class RecipeManagerApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
+        System.out.println("test");
+        
         StorageManager sm = new StorageManager();
         
         User user = null;
