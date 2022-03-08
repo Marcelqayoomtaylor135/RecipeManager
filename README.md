@@ -18,4 +18,4 @@ In future, I would like to:
 
  1. Design a more interesting and colourful front end
  2. Improve the ingredient adding system, as right now, ingredients have to be added manually.
- 3. Make the app compatible with mac and linux
+ 3. Make the app compatible with mac and linux **(currently only compatible with windows)**
