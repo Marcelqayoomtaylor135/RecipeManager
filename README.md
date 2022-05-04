@@ -4,7 +4,7 @@ Recipe Manager is a desktop Java application that suggests recipes to the users 
 
 In the program's current stage (alpha), users enter the ingredients they have in their pantry and suggests recipes based off my favourite website https://www.recipetineats.com/
 
-I have yet to develop the front end. As I only had three months to work on this project, I wanted it to be backend focused.
+I am yet to polish the front end. As I only had three months to work on this project, I wanted it to be backend focused.
 
 The application stores user data through a local database. The main data the app stores is ingredients, as recipes are loaded upon launch.
 
