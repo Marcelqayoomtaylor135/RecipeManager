@@ -8,6 +8,11 @@ I am yet to polish the front end. As I only had three months to work on this pro
 
 The application stores user data through a local database. The main data the app stores is ingredients, as recipes are loaded upon launch.
 
+## Demo
+
+https://user-images.githubusercontent.com/48072798/214773276-c9720ee9-31f1-4430-a31e-1e723467a714.mp4
+
+
 ## Technical Details
 
 The program was developed using JavaFX and FXML. I used SQLite to build a database to store user data.
